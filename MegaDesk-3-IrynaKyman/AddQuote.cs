@@ -20,7 +20,7 @@ namespace MegaDesk_3_IrynaKyman
                
         private void CalculateBtn_Click(object sender, EventArgs e)
         {
-            if (int.TryParse(WidthTextBox.Text, out int WidthInput))
+           if (int.TryParse(WidthTextBox.Text, out int WidthInput))
             {
                 if (WidthInput < Desk.MINWIDTH || WidthInput > Desk.MAXWIDTH)
                 {
@@ -29,7 +29,7 @@ namespace MegaDesk_3_IrynaKyman
                     WidthTextBox.Focus();
 
                 }
-            }
+            }   
         }
 
         private void WidthTextBox_Validating(object sender, System.ComponentModel.CancelEventArgs e)
@@ -43,6 +43,8 @@ namespace MegaDesk_3_IrynaKyman
                     WidthTextBox.Focus();
 
                 }
+                else
+                { }
             }
         }
 
